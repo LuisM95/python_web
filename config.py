@@ -9,7 +9,7 @@ class Config:
 
 class DevelopmentConfig(Config):
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = 'mysql://root:Sh10n95@localhost/project_web'
+    SQLALCHEMY_DATABASE_URI = 'mysql://root:password@localhost/project_web'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     MAIL_SERVER = 'smtp.googlemail.com'
@@ -19,7 +19,7 @@ class DevelopmentConfig(Config):
     MAIL_PASSWORD = os.getenv("MAIL_PASSWORD")
 
 class TestConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'mysql://root:Sh10n95@localhost/project_web_test'
+    SQLALCHEMY_DATABASE_URI = 'mysql://root:password@localhost/project_web_test'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     TEST = True
 
